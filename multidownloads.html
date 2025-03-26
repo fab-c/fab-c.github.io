@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello, world!</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+    <h1>Multi Downloads TEST</h1>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <th>File name</td>
+            <td>Action</td>
+        </tr>
+        <tr>
+            <td>File 1</td>
+            <td><a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="" _blank></td>
+        </tr>
+        <tr>
+            <td>File 2</td>
+            <td><a href="https://pdfobject.com/pdf/sample.pdf" target="" _blank></td>
+        </tr>
+    </table>
+
+    <button type="button" id="btn-dl-all">Download ALL</button>
+</body>
+<script>
+    document.getElementById("btn-dl-all").addEventListener("click", (event) => {
+        document.getElementsByTagName("a").click();
+    });
+</script>
+</html>
